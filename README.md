@@ -49,15 +49,12 @@ Cerrar sesión: Usa el botón de logout en la barra de navegación para cerrar s
 ## Contribuir
 Si deseas contribuir, sigue los siguientes pasos:
 
-## Haz un fork del proyecto.
+### Haz un fork del proyecto.
 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
 
-## Haz tus cambios (git commit -am 'Añadir nueva funcionalidad').
+### Haz tus cambios (git add . -> git commit -m 'Añadir nueva funcionalidad').
 Sube tus cambios (git push origin feature/nueva-funcionalidad).
 Crea un Pull Request.
-
-## Licencia
-Este proyecto está bajo la licencia MIT. Mira el archivo LICENSE para más detalles.
 
 ## Contacto
 Tu Nombre - @tuusuario - tu.email@ejemplo.com
