@@ -24,7 +24,6 @@ La aplicación web permite a los usuarios ver una lista de libros obtenidos de u
 
 ### Clonar el repositorio
 
-```bash
 git clone https://github.com/tu-usuario/tu-proyecto-libros.git
 cd tu-proyecto-libros
 
@@ -37,31 +36,30 @@ Iniciar la aplicación
 ## Uso
 Después de iniciar la aplicación, puedes acceder a ella en http://localhost:8080. Aquí hay algunos ejemplos de cómo usar la aplicación:
 
-### Ver lista de libros
+## Ver lista de libros
 Al navegar a la ruta /libros, podrás ver la lista completa de libros disponibles.
 
-### Ver detalles de un libro
+## Ver detalles de un libro
 Haz clic en el título de cualquier libro en la lista para ver los detalles del libro.
 
-
-### Autenticación
+## Autenticación
 Inicio de sesión: Navega a la página de login y utiliza las credenciales de usuario almacenadas en credentials.json para iniciar sesión.
 Cerrar sesión: Usa el botón de logout en la barra de navegación para cerrar sesión.
 
-### Contribuir
+## Contribuir
 Si deseas contribuir, sigue los siguientes pasos:
 
-### Haz un fork del proyecto.
+## Haz un fork del proyecto.
 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
 
-### Haz tus cambios (git commit -am 'Añadir nueva funcionalidad').
+## Haz tus cambios (git commit -am 'Añadir nueva funcionalidad').
 Sube tus cambios (git push origin feature/nueva-funcionalidad).
 Crea un Pull Request.
 
-### Licencia
+## Licencia
 Este proyecto está bajo la licencia MIT. Mira el archivo LICENSE para más detalles.
 
-### Contacto
+## Contacto
 Tu Nombre - @tuusuario - tu.email@ejemplo.com
 Link del proyecto: https://github.com/tu-usuario/tu-proyecto-libros
 
