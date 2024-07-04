@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
 import credentials from '@/data/credentials.json'; // Importa el archivo JSON
