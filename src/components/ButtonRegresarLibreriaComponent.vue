@@ -1,7 +1,7 @@
 <template>
 
     <div class="text-end container mb-5">
-      <button @click="goBack" class="btn">Regresar</button>
+      <button @click="goBack" class="btn">Regresar a libros</button>
     </div>
     
 </template>
@@ -9,11 +9,11 @@
 <script>
 
 export default {
-name: 'ButtonRegresarComponent',
+name: 'ButtonRegresarLibreriaComponent',
 methods:{
   goBack() {
     if(this.$router) {
-      this.$router.push('/')
+      this.$router.push('/libros')
     }
     else{
       console.log('Vue Router no está disponible');
