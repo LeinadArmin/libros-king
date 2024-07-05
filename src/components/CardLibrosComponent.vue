@@ -92,6 +92,12 @@ export default {
   border: none;
 }
 
+.btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 .btn-primary {
   background-color: #00adb5;
   border-color: #00adb5;
@@ -101,6 +107,13 @@ export default {
 .btn-primary:hover {
   background-color: #007b8a;
   border-color: #007b8a;
+  transform: translateY(-3px);
+}
+
+.btn-primary:active {
+  background-color: #005f63;
+  border-color: #005f63;
+  transform: translateY(1px);
 }
 
 .btn-success {
@@ -112,6 +125,13 @@ export default {
 .btn-success:hover {
   background-color: #218838;
   border-color: #1e7e34;
+  transform: translateY(-3px);
+}
+
+.btn-success:active {
+  background-color: #1c7430;
+  border-color: #1a6832;
+  transform: translateY(1px);
 }
 
 .btn-info {
@@ -123,18 +143,23 @@ export default {
 .btn-info:hover {
   background-color: #138496;
   border-color: #117a8b;
+  transform: translateY(-3px);
+}
+
+.btn-info:active {
+  background-color: #11707f;
+  border-color: #105c6d;
+  transform: translateY(1px);
 }
 
 a {
   color: #00adb5;
 }
 
-a:hover {
-  color: #007b8a;
-  text-decoration: none;
-}
+
 
 .text-center {
   text-align: center;
 }
 </style>
+
