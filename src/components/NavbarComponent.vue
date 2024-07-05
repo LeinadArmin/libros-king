@@ -1,29 +1,31 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <router-link to="/" class="navbar-brand">Biblioteca</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">Home</router-link> 
+            <router-link to="/" class="nav-link" active-class="active">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link">Acerca de</router-link>
+            <router-link to="/about" class="nav-link" active-class="active">Acerca de</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/libros" class="nav-link">Libros</router-link>
+            <router-link to="/libros" class="nav-link" active-class="active">Libros</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Carro de compras</a>
+            <router-link to="/cart" class="nav-link disabled" active-class="active">Carro de compras</router-link>
           </li>
-
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item" v-if="isAuthenticated">
-            <button class="btn btn-outline-danger" @click="handleLogout">Logout</button>
+            <button class="btn-logout btn btn-outline-danger" @click="handleLogout">Logout</button>
+          </li>
+          <li class="nav-item" v-else>
+            <router-link to="/login" class="btn btn-outline-success">Login</router-link>
           </li>
         </ul>
       </div>
@@ -49,20 +51,78 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.navbar {
+  background-color: #343a40;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
-a {
-  color: #42b983;
+
+.nav-link.active {
+  color: #00adb5;
+}
+
+.nav-link:hover {
+  color: #00adb5;
+}
+
+.btn-outline-danger {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.btn-outline-danger:active {
+  background-color: #c82333;
+  transform: translateY(1px);
+}
+
+.btn-outline-danger:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+}
+
+.btn-outline-success {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.btn-outline-success:active {
+  background-color: #218838;
+  transform: translateY(1px);
+}
+
+.btn-outline-success:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
 }
 </style>
+

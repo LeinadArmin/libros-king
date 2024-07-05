@@ -1,12 +1,12 @@
 <template>
 
-  <LibroDetalleComponent />
+  <CardLibroDetalleComponent />
   <ButtonRegresarLibreriaComponent />
 
 </template>
 
 <script>
-import LibroDetalleComponent from '@/components/LibroDetalleComponent.vue';
+import CardLibroDetalleComponent from '@/components/CardLibroDetalleComponent.vue';
 import ButtonRegresarLibreriaComponent from '@/components/ButtonRegresarLibreriaComponent.vue';
 
 
@@ -14,7 +14,7 @@ export default {
   name: 'LibroDetalleView',
   components: {
     ButtonRegresarLibreriaComponent,
-    LibroDetalleComponent
+    CardLibroDetalleComponent
   },
   
   computed: {

@@ -1,28 +1,34 @@
 <template>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Enlaces</h3>
-                    <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Contacto</h3>
-                    <p>Correo electrónico: info@example.com</p>
-                    <p>Teléfono: 123-456-7890</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Derechos de autor</h3>
-                    <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-                </div>
-            </div>
+  <footer class="footer py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h3>Enlaces</h3>
+          <ul class="list-unstyled">
+            <li><router-link to="/" class="footer-link">Inicio</router-link></li>
+            <li><router-link to="/about" class="footer-link">Acerca de</router-link></li>
+            <li><router-link to="/contact" class="footer-link">Contacto</router-link></li>
+          </ul>
         </div>
-    </footer>
-  </template>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h3>Contacto</h3>
+          <p>Correo electrónico: <a href="mailto:info@example.com" class="footer-link">info@example.com</a></p>
+          <p>Teléfono: <a href="tel:123-456-7890" class="footer-link">123-456-7890</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Derechos de autor</h3>
+          <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+          <div class="social-icons">
+            <a href="#" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
+
   
   <script>
   export default {
@@ -35,27 +41,43 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
-  footer{
-    background-color: #393E46;
-  }
+.footer {
+  background-color: #393E46;
+  color: #EEEEEE;
+}
 
-  a{
-    color: #EEEEEE
-  }
+.footer h3 {
+  margin-bottom: 20px;
+  color: #00ADB5;
+}
 
-  h3 {
-    margin: 40px 0 0;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  a {
-    color: #42b983;
-  }
-  </style>
-  
+.footer .footer-link {
+  color: #EEEEEE;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-link:hover {
+  color: #00ADB5;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #EEEEEE;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #00ADB5;
+}
+</style>

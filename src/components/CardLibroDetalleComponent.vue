@@ -22,7 +22,7 @@
   
   
   export default {
-    name: 'LibroDetalleView',
+    name: 'CardLibroDetalleView',
     computed: {
       ...mapState(['libros']),
       ...mapGetters(['getLibroById']),

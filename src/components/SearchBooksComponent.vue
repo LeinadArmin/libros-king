@@ -1,12 +1,6 @@
 <template>
   <div class="search-container">
-    <input
-      type="text"
-      v-model="searchQuery"
-      @input="onInput"
-      placeholder="Buscar libros..."
-      class="search-input"
-    />
+    <input type="text" v-model="searchQuery" @input="onInput" placeholder="Buscar libros..." class="search-input"/>
   </div>
 </template>
 
