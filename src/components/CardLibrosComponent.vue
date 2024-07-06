@@ -5,6 +5,7 @@
     <div class="row">
       <div class="col-md-4" v-for="libro in filteredLibros" :key="libro.id">
         <div class="card mb-5 book-card">
+          <img :src="getBookImage(libro.id)" class="card-img-top" alt="Book Image">
           <div class="card-body">
             <h5 class="card-title">{{ libro.Title }}</h5>
             <router-link :to="{ name: 'libroDetalle', params: { id: libro.id }}" class="btn btn-primary btn-sm mt-2">Ver Detalles</router-link>
@@ -27,6 +28,7 @@
 <script>
 import { mapState, mapActions } from 'vuex';
 import SearchBooksComponent from '@/components/SearchBooksComponent.vue';
+import images from '@/data/images.json';
 
 export default {
   name: 'CardLibrosComponent',
@@ -35,7 +37,8 @@ export default {
   },
   data() {
     return {
-      searchQuery: ''
+      searchQuery: '',
+      images: images
     };
   },
   computed: {
@@ -53,6 +56,9 @@ export default {
     ...mapActions(['fetchLibros']),
     filterLibros(query) {
       this.searchQuery = query;
+    },
+    getBookImage(id) {
+      return this.images[id] || 'https://example.com/images/default.jpg';
     }
   }
 };
@@ -90,12 +96,6 @@ export default {
   background-color: #393e46;
   color: #eeeeee;
   border: none;
-}
-
-.btn {
-  border-radius: 5px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary {
@@ -156,10 +156,12 @@ a {
   color: #00adb5;
 }
 
-
+a:hover {
+  color: #007b8a;
+  text-decoration: none;
+}
 
 .text-center {
   text-align: center;
 }
 </style>
-
