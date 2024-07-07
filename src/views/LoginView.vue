@@ -1,16 +1,19 @@
 <template>
  
   <FormLoginComponent/>
+  <FooterComponent/>
  
  </template>
  
  <script>
  import FormLoginComponent from '@/components/FormLoginComponent.vue'
+ import FooterComponent from '@/components/FooterComponent.vue'
  
  export default {
    name: 'LibrosView',
    components: {
     FormLoginComponent,
+    FooterComponent
    }
  }
  </script>

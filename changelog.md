@@ -1,4 +1,8 @@
 # CHANGELOG
+## [0.2.2] - 2024-07-07
+### Modified
+- Add FooterComponent on HomeView, AboutView, LibrosView, LibroDetalleView, LoginView
+
 ## [0.2.1] - 2024-07-06
 ### Added
 - Add firebase files to project and hosting on firebase cloud 

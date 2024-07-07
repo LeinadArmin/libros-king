@@ -2,19 +2,22 @@
 
   <CardLibroDetalleComponent />
   <ButtonRegresarLibreriaComponent />
+  <FooterComponent />
 
 </template>
 
 <script>
 import CardLibroDetalleComponent from '@/components/CardLibroDetalleComponent.vue';
 import ButtonRegresarLibreriaComponent from '@/components/ButtonRegresarLibreriaComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 
 export default {
   name: 'LibroDetalleView',
   components: {
     ButtonRegresarLibreriaComponent,
-    CardLibroDetalleComponent
+    CardLibroDetalleComponent,
+    FooterComponent,
   },
   
   computed: {
