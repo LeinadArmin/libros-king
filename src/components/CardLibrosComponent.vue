@@ -70,6 +70,7 @@ export default {
   color: #eeeeee;
   border: 1px solid #00adb5;
   border-radius: 10px;
+  padding: 1rem;
 }
 
 .book-card {
@@ -84,24 +85,34 @@ export default {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #00adb5;
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1rem;
+}
+
+.card-img-top {
+  height: 500px; /* Aumenta la altura de la imagen */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .list-group-item {
   background-color: #393e46;
   color: #eeeeee;
   border: none;
+  padding: 0.5rem 1rem;
 }
 
 .btn-primary {
   background-color: #00adb5;
   border-color: #00adb5;
   color: #eeeeee;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
 }
 
 .btn-primary:hover {
@@ -116,39 +127,19 @@ export default {
   transform: translateY(1px);
 }
 
-.btn-success {
-  background-color: #28a745;
-  border-color: #28a745;
-  color: #ffffff;
-}
-
-.btn-success:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-  transform: translateY(-3px);
-}
-
-.btn-success:active {
-  background-color: #1c7430;
-  border-color: #1a6832;
-  transform: translateY(1px);
-}
-
+.btn-success,
 .btn-info {
-  background-color: #17a2b8;
-  border-color: #17a2b8;
-  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
 }
 
+.btn-success:hover,
 .btn-info:hover {
-  background-color: #138496;
-  border-color: #117a8b;
   transform: translateY(-3px);
 }
 
+.btn-success:active,
 .btn-info:active {
-  background-color: #11707f;
-  border-color: #105c6d;
   transform: translateY(1px);
 }
 
@@ -165,3 +156,4 @@ a:hover {
   text-align: center;
 }
 </style>
+
