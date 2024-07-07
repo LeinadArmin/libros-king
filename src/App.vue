@@ -4,7 +4,7 @@
     <div class="flex-grow-1 d-flex flex-column overflow-auto">
       <router-view class="main-content flex-grow-1" />
     </div>
-    <FooterComponent />
+    <!-- <FooterComponent /> -->
   </div>
 </template>
 
