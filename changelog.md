@@ -1,4 +1,8 @@
 # CHANGELOG
+## [0.2.3] - 2024-07-07
+### Modified
+- Modified HomeComponent for improving display on mobile view
+
 ## [0.2.2] - 2024-07-07
 ### Modified
 - Add FooterComponent on HomeView, AboutView, LibrosView, LibroDetalleView, LoginView

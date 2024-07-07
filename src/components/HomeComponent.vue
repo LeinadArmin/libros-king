@@ -1,6 +1,6 @@
 <template>
   <div class="welcome d-flex flex-column justify-content-center align-items-center vh-100">
-    <div class="text-center">
+    <div class="text-center content">
       <h1 class="display-4">Bienvenido a la Biblioteca de Libros</h1>
       <p class="lead">Explora nuestra colección de libros.</p>
       <router-link to="/libros" class="btn-explorar btn btn-primary btn-lg mt-3">Explorar</router-link>
@@ -22,6 +22,12 @@ export default {
   background: linear-gradient(to right, #00adb5, #393e46);
   color: #eeeeee;
   height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 600px;
 }
 
 h1 {
@@ -57,5 +63,26 @@ h1 {
 .btn-explorar:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 173, 181, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 767.98px) {
+  .welcome {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .btn-explorar {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
 </style>

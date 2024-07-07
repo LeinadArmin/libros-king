@@ -1,16 +1,16 @@
 <template>
-  <footer class="footer py-2 mt-auto">
+  <footer class="footer py-3 mt-auto">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="col-lg-4 mb-4 mb-lg-0">
           <h3>Enlaces</h3>
-          <ul class="list-unstyled">
-            <li><router-link to="/" class="footer-link">Inicio</router-link></li>
-            <li><router-link to="/about" class="footer-link">Acerca de</router-link></li>
-            <li><router-link to="/contact" class="footer-link">Contacto</router-link></li>
+          <ul class="list-inline">
+            <li class="list-inline-item"><router-link to="/" class="footer-link">Inicio</router-link></li>
+            <li class="list-inline-item"><router-link to="/about" class="footer-link">Acerca de</router-link></li>
+            <li class="list-inline-item"><router-link to="/contact" class="footer-link">Contacto</router-link></li>
           </ul>
         </div>
-        <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="col-lg-4 mb-4 mb-lg-0">
           <h3>Contacto</h3>
           <p>Correo electrónico: <a href="mailto:info@example.com" class="footer-link">info@example.com</a></p>
           <p>Teléfono: <a href="tel:123-456-7890" class="footer-link">123-456-7890</a></p>
@@ -39,13 +39,14 @@ export default {
 .footer {
   background-color: #393E46;
   color: #EEEEEE;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer h3 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #00ADB5;
+  font-size: 1.5rem;
 }
 
 .footer .footer-link {
@@ -59,18 +60,17 @@ export default {
 }
 
 .footer ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.footer li {
-  margin-bottom: 8px;
+.footer .list-inline-item {
+  margin-right: 15px;
 }
 
 .footer .social-icons a {
-  font-size: 1.2rem;
-  margin-right: 8px;
+  font-size: 1.5rem;
+  margin-right: 10px;
   color: #EEEEEE;
   transition: color 0.3s ease;
 }
@@ -80,7 +80,7 @@ export default {
 }
 
 .footer p {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -88,4 +88,3 @@ export default {
   padding-right: 15px;
 }
 </style>
-
