@@ -1,4 +1,8 @@
 # CHANGELOG
+## [0.2.1] - 2024-07-06
+### Added
+- Add firebase files to project and hosting on firebase cloud 
+
 ## [0.2.0] - 2024-07-06
 ### Added
 - Add a changelog file to keep a history of changes applied to the web application
