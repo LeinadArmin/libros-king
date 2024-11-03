@@ -56,7 +56,5 @@ Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
 Sube tus cambios (git push origin feature/nueva-funcionalidad).
 Crea un Pull Request.
 
-## Contacto
-Tu Nombre - @tuusuario - tu.email@ejemplo.com
-Link del proyecto: https://github.com/tu-usuario/tu-proyecto-libros
+
 
